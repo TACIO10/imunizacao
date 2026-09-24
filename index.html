@@ -16,6 +16,7 @@
   --display:"Fredoka","Baloo 2",ui-rounded,system-ui,sans-serif; --body:"Nunito",ui-rounded,system-ui,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
   background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:24px 24px;overflow-x:hidden}
 .wrap{max-width:1080px;margin:0 auto;padding-inline:16px}
@@ -137,7 +138,7 @@ footer b{font-family:var(--display);color:var(--ink)}
         <div class="from">De <s>R$ 29,90</s> por apenas</div>
         <div class="now"><small>R$</small>9,90</div>
         <div class="once">Pagamento único · Arquivo em PDF para imprimir</div>
-        <a class="btn buy" href="#" target="_blank" rel="noopener">QUERO MEUS MAPAS MENTAIS</a>
+        <a class="btn buy" href="#oferta">QUERO MEUS MAPAS MENTAIS</a>
         <div class="safe"><span>📄 PDF em A4</span><span>🖨️ Pronto para imprimir</span><span>🎨 Colorido</span></div>
       </div>
     </div>
@@ -177,7 +178,7 @@ footer b{font-family:var(--display);color:var(--ink)}
 
   <section class="final">
     <div class="wrap">
-      <div class="price">
+      <div class="price" id="oferta">
         <h2>Garanta agora os Mapas Mentais da Imunização 2026</h2>
         <div class="from">De <s>R$ 29,90</s> por apenas</div>
         <div class="now"><small>R$</small>9,90</div>
