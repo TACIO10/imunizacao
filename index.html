@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mapas Mentais da Imunização 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,6 +106,8 @@ footer b{font-family:var(--display);color:var(--ink)}
 
 @media (prefers-reduced-motion:reduce){.track{transition:none}.mtrack{animation:none}.btn{animation:none}}
 </style>
+</head>
+<body>
 
 <div class="bar">⚠ <b>ATUALIZADO</b> · Calendário Nacional de Vacinação · Setembro 2026</div>
 
@@ -222,3 +229,5 @@ const GET=[
 ];
 document.getElementById('get').innerHTML=GET.map(([k,t,s])=>`<div class="item" style="--k:var(${k})"><span class="chk">${CHK}</span><div><b>${t}</b><span>${s}</span></div></div>`).join('');
 </script>
+</body>
+</html>
