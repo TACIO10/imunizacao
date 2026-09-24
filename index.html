@@ -117,7 +117,7 @@ footer b{font-family:var(--display);color:var(--ink)}
     <div class="wrap">
       <span class="pill">⚠ ATUALIZADO SETEMBRO 2026</span>
       <h1>Receba os Mapas Mentais da <span>Imunização</span> atualizados em 2026</h1>
-      <p class="sub">15 páginas coloridas, prontas para imprimir em A4, com o Calendário Nacional de Vacinação organizado por faixa etária.</p>
+      <p class="sub">Material colorido, pronto para imprimir em A4, com o Calendário Nacional de Vacinação organizado por faixa etária.</p>
 
       <div class="mock" id="mock" aria-label="Amostra das páginas do material">
         <div class="tape l"></div><div class="tape r"></div>
@@ -134,7 +134,7 @@ footer b{font-family:var(--display);color:var(--ink)}
   <section>
     <div class="wrap">
       <div class="price">
-        <div class="stickr">15<br>páginas</div>
+        <div class="stickr">Atualizado<br>2026</div>
         <div class="from">De <s>R$ 37,00</s> por apenas</div>
         <div class="now"><small>R$</small>19,90</div>
         <div class="once">Pagamento único · Arquivo em PDF para imprimir</div>
@@ -182,7 +182,7 @@ footer b{font-family:var(--display);color:var(--ink)}
         <h2>Garanta agora os Mapas Mentais da Imunização 2026</h2>
         <div class="from">De <s>R$ 37,00</s> por apenas</div>
         <div class="now"><small>R$</small>19,90</div>
-        <div class="once">Pagamento único · 15 páginas em PDF</div>
+        <div class="once">Pagamento único · Arquivo em PDF</div>
         <a class="btn buy" href="#" target="_blank" rel="noopener">COMPRAR AGORA →</a>
         <div class="safe"><span>📄 PDF em A4</span><span>🖨️ Pronto para imprimir</span><span>✅ Atualizado setembro 2026</span></div>
       </div>
@@ -207,7 +207,7 @@ const track=document.getElementById('track'), dots=document.getElementById('dots
 track.innerHTML=HERO.map(([n])=>`<div class="slide"><div class="sheet" style="background-image:url(${IMG[n]})"></div></div>`).join('');
 dots.innerHTML=HERO.map(()=>'<i></i>').join('');
 let i=0;
-function go(){ track.style.transform=`translateX(${-i*100}%)`; [...dots.children].forEach((d,j)=>d.classList.toggle('on',j===i)); cap.textContent=`Página ${HERO[i][0]} de 15 · ${HERO[i][1]}`; }
+function go(){ track.style.transform=`translateX(${-i*100}%)`; [...dots.children].forEach((d,j)=>d.classList.toggle('on',j===i)); cap.textContent=`${HERO[i][0]} · ${HERO[i][1]}`; }
 go();
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(()=>{ i=(i+1)%HERO.length; go(); },4200);
 
@@ -219,12 +219,12 @@ document.getElementById('mtrack').innerHTML=one+one;
 /* o que você recebe */
 const CHK='<svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const GET=[
- ['--blue','15 páginas em PDF','Formato A4 na horizontal, prontas para imprimir em casa ou na gráfica.'],
+ ['--blue','Arquivo PDF em A4','Formato A4 na horizontal, pronto para imprimir em casa ou na gráfica.'],
  ['--green','Calendário atualizado','Baseado no Calendário Nacional de Vacinação de setembro de 2026.'],
  ['--orange','Criança em 4 mapas','Do nascimento aos 14 anos, dividido por faixa etária para facilitar a memorização.'],
  ['--teal','Adolescente, Jovem e Adulto','Cada grupo com seu mapa: faixas etárias e vacinas indicadas.'],
  ['--red','Idoso e Gestante em detalhe','Cada vacina em um ramo, com o texto completo do calendário na mesma página.'],
- ['--purple','5 páginas de Observações','Influenza, Covid-19, Febre amarela, dT, HPV4, Qdenga, Pneumocócica 20-valente, Varicela e Tríplice Viral.'],
+ ['--purple','Observações por vacina','Influenza, Covid-19, Febre amarela, dT, HPV4, Qdenga, Pneumocócica 20-valente, Varicela e Tríplice Viral.'],
  ['--pink','Remissões de página','Cada vacina com asterisco indica em qual página está a observação dela.'],
  ['--gold','Capa, sumário e visão geral','Uma página com todos os grupos para você enxergar o calendário inteiro de uma vez.']
 ];
